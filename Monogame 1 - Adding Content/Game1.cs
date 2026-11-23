@@ -18,6 +18,7 @@ namespace Monogame_1___Adding_Content
         Texture2D windowTexture;
         Texture2D outsideTexture;
         Texture2D plantTexture;
+        Texture2D bookTexture;
 
         public Game1()
         {
@@ -53,6 +54,7 @@ namespace Monogame_1___Adding_Content
             outsideTexture = Content.Load<Texture2D>("outside");
             windowTexture = Content.Load<Texture2D>("window");
             plantTexture = Content.Load<Texture2D>("plant1");
+            bookTexture = Content.Load<Texture2D>("book");
         }
 
         protected override void Update(GameTime gameTime)
@@ -80,6 +82,7 @@ namespace Monogame_1___Adding_Content
             _spriteBatch.Draw(snowTexture, new Vector2(0, 0), Color.White);
             _spriteBatch.Draw(windowTexture, new Vector2(0, 0), Color.White);
             _spriteBatch.Draw(plantTexture, new Vector2(480, 240), Color.White);
+            _spriteBatch.Draw(bookTexture, new Vector2(180, 425), Color.White);
 
             _spriteBatch.End();
 
